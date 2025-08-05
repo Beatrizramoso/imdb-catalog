@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Application initiated");
 
-        System.out.println("Application finished");
+        System.out.println("Application finished!!!!");
     }
 
 }
