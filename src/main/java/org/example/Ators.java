@@ -7,7 +7,7 @@ public class Ators
 {
     public String Nome;
     public String Filmes;
-    public Data Dat_Nasc;
+    public LocalDate Dat_Nasc;
 
     public static class Cadastractor()
     {
