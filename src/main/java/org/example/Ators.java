@@ -9,7 +9,7 @@ public class Ators
     public String Filmes;
     public LocalDate Dat_Nasc;
 
-    public static class Cadastractor()
+    public void Ator(String nome, String filmes, LocalDate dataNascimento)
     {
         this.Nome = Nome;
         this.Filmes = Filmes;
