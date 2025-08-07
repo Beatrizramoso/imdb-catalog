@@ -30,7 +30,7 @@ O projeto se baseia no seguinte modelo de classes:
 - `Filme`
     - Atributos: `nome`, `dataLancamento`, `orcamento`, `atores`, `diretor`
 
-![Diagrama de Classes](docs/diagrama.png) <!-- Se quiser usar a imagem, mova-a para a pasta docs e atualize o path -->
+![Diagrama de Classes](docs/diagrama.jpg)
 
 ## 🔍 Funcionalidades
 
