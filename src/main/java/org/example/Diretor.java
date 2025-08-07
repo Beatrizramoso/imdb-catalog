@@ -1,3 +1,5 @@
+package org.example;
+
 public class Diretor {
     public String nome;
     public String instagram;
