@@ -3,11 +3,11 @@ package org.example;
 public class Diretor {
     public String nome;
     public String instagram;
-    public String genero;
+    public String generoAssinatura;
 
-    public Diretor (String nome, String instagram, String genero) {
+    public Diretor (String nome, String instagram, String generoAssinatura) {
         this.nome = nome;
         this.instagram = instagram;
-        this.genero = genero;
+        this.generoAssinatura = generoAssinatura;
     }
 }

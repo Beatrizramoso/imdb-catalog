@@ -15,6 +15,12 @@ public class Main {
                 "@bradpittofflcial",
                 "Tenente Aldo Raine");
 
+        // Cadastro de diretor
+        Diretor quentinTarantino = new Diretor(
+                "Quentin Tarantino",
+                "@quentin.tarantinoo",
+                "Faroeste");
+
         System.out.println("Application finished!!!!");
     }
 
