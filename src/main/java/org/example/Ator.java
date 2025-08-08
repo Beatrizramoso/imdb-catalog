@@ -2,6 +2,7 @@ package org.example;
 
 public class Ator {
 
+    //Atributo nome;
     public String nome;
 
     public String instagram;
