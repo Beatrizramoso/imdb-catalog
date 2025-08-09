@@ -1,5 +1,9 @@
 package org.example;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -25,6 +29,14 @@ public class Main {
                 "Steven Spielberg",
                 "@stevenspeilbergofficial",
                 "Ficção Científica");
+
+        Filme leonardo = new Filme(
+                "Era uma Vez em... Hollywood",
+                LocalDate.of(2019, 8, 15),
+                BigDecimal.valueOf(90000000.00),
+                List.of(leonardoDiCaprio, bradPitt),
+                quentinTarantino
+        );
 
         System.out.println("Application finished!!!!");
     }
