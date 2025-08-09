@@ -24,6 +24,10 @@ public class Filme {
         this.diretor = diretor;
     }
 
+    public void cadastrarAtor(Ator ator) {
+        this.atores.add(ator);
+    }
+
     public String getNome() {
         return nome;
     }
