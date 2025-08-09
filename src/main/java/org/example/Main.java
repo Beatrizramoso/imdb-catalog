@@ -21,6 +21,11 @@ public class Main {
                 "@quentin.tarantinoo",
                 "Faroeste");
 
+        Diretor stevenSpielberg = new Diretor(
+                "Steven Spielberg",
+                "@stevenspeilbergofficial",
+                "Ficção Científica");
+
         System.out.println("Application finished!!!!");
     }
 
