@@ -19,4 +19,9 @@ public class Ator extends Pessoa {
     public void setPersonagemMaisPopular(String personagemMaisPopular) {
         this.personagemMaisPopular = personagemMaisPopular;
     }
+
+    @Override
+    public String toString() {
+        return nome;
+    }
 }

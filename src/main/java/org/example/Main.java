@@ -13,6 +13,16 @@ public class Main {
         System.out.println("Application initiated!!!");
 
         cadastrarEraUmaVezEmHollywood();
+        cadastrarAListaDeSchindler();
+
+        try {
+            Filme filmeEncontrado = buscarFilmePorNome("A LISTA de SchiNdler");
+            System.out.println(filmeEncontrado);
+
+            Filme filmeQueNaoExiste = buscarFilmePorNome("A derrota: Um filme que não existe");
+        } catch (Exception erro) {
+            System.out.println(erro.getMessage());
+        }
 
         System.out.println("Application finished!!!!");
     }
@@ -38,22 +48,15 @@ public class Main {
                 "Quentin Tarantino",
                 "@quentin.tarantinoo",
                 "Faroeste");
-        Diretor stevenSpielberg = new Diretor(
-                "Steven Spielberg",
-                "@stevenspeilbergofficial",
-                "Ficção Científica");
 
         // Cria filme
         Filme eraUmaVezEmHollywood = new Filme(
                 "Era uma Vez em... Hollywood",
                 LocalDate.of(2019, 8, 15),
                 BigDecimal.valueOf(90000000.00),
-                List.of(leonardoDiCaprio, bradPitt),
+                List.of(leonardoDiCaprio, bradPitt, margotRobbie),
                 quentinTarantino
         );
-
-        // Podemos adicionar atores posteriormente também
-        eraUmaVezEmHollywood.cadastrarAtor(margotRobbie);
 
         // Cadastra filme
         filmes.add(eraUmaVezEmHollywood);
@@ -64,6 +67,23 @@ public class Main {
                 "Steven Spielberg",
                 "@stevenspeilbergofficial",
                 "Ficção Científica");
+
+        filmes.add(new Filme(
+                "A lista de Schindler",
+                LocalDate.of(2019, 8, 15),
+                BigDecimal.valueOf(90000000.00),
+                null, // ToDo: Adicionar mais atores
+                stevenSpielberg
+        ));
+    }
+
+    public static Filme buscarFilmePorNome(String nome) {
+        for (Filme filme : filmes) {
+            if (filme.getNome().equalsIgnoreCase(nome)) {
+                return filme;
+            }
+        }
+        throw new RuntimeException("Não foi possível encontrar o filme " + nome);
     }
 
 }

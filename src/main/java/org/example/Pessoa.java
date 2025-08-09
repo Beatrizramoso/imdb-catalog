@@ -2,9 +2,9 @@ package org.example;
 
 public abstract class Pessoa {
 
-    private String nome;
+    protected String nome;
 
-    private String instagram;
+    protected String instagram;
 
     public Pessoa(String nome, String instagram) {
         this.nome = nome;

@@ -16,4 +16,9 @@ public class Diretor extends Pessoa {
     public void setGeneroAssinatura(String generoAssinatura) {
         this.generoAssinatura = generoAssinatura;
     }
+
+    @Override
+    public String toString() {
+        return nome;
+    }
 }

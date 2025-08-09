@@ -2,6 +2,7 @@ package org.example;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Filme {
@@ -12,7 +13,7 @@ public class Filme {
 
     private BigDecimal orcamento;
 
-    private List<Ator> atores;
+    private List<Ator> atores = new ArrayList<>();
 
     private Diretor diretor;
 
@@ -22,10 +23,6 @@ public class Filme {
         this.orcamento = orcamento;
         this.atores = atores;
         this.diretor = diretor;
-    }
-
-    public void cadastrarAtor(Ator ator) {
-        this.atores.add(ator);
     }
 
     public String getNome() {
@@ -66,5 +63,10 @@ public class Filme {
 
     public void setDiretor(Diretor diretor) {
         this.diretor = diretor;
+    }
+
+    @Override
+    public String toString() {
+        return nome + " do diretor " + diretor;
     }
 }
