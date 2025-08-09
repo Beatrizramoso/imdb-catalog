@@ -30,7 +30,7 @@ public class Main {
                 "@stevenspeilbergofficial",
                 "Ficção Científica");
 
-        Filme leonardo = new Filme(
+        Filme eraUmaVezEmHollywood = new Filme(
                 "Era uma Vez em... Hollywood",
                 LocalDate.of(2019, 8, 15),
                 BigDecimal.valueOf(90000000.00),
