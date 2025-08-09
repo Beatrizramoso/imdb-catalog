@@ -4,11 +4,13 @@ package org.example;
 public class Ator {
 
     //Atributo nome;
-    public String nome;
+    private String nome;
+
     //Atributo Instagram
-    public String instagram;
+    private String instagram;
+
     //Atributo Personagem Popular
-    public String personagemMaisPopular;
+    private String personagemMaisPopular;
 
     //*Construtor do Método cadastra Ator*//
     public Ator(String nome, String instagram, String personagemMaisPopular) {
@@ -17,4 +19,27 @@ public class Ator {
         this.personagemMaisPopular = personagemMaisPopular;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getInstagram() {
+        return instagram;
+    }
+
+    public void setInstagram(String instagram) {
+        this.instagram = instagram;
+    }
+
+    public String getPersonagemMaisPopular() {
+        return personagemMaisPopular;
+    }
+
+    public void setPersonagemMaisPopular(String personagemMaisPopular) {
+        this.personagemMaisPopular = personagemMaisPopular;
+    }
 }

@@ -6,21 +6,61 @@ import java.util.List;
 
 public class Filme {
 
-    String nome;
+    private String nome;
 
-    LocalDate datadeLancamento;
+    private LocalDate datadeLancamento;
 
-    BigDecimal orcamento;
+    private BigDecimal orcamento;
 
-    List<Ator> atores;
+    private List<Ator> atores;
 
-    Diretor diretor;
+    private Diretor diretor;
 
     public Filme(String nome, LocalDate datadeLancamento, BigDecimal orcamento, List<Ator> atores, Diretor diretor) {
         this.nome = nome;
         this.datadeLancamento = datadeLancamento;
         this.orcamento = orcamento;
         this.atores = atores;
+        this.diretor = diretor;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public LocalDate getDatadeLancamento() {
+        return datadeLancamento;
+    }
+
+    public void setDatadeLancamento(LocalDate datadeLancamento) {
+        this.datadeLancamento = datadeLancamento;
+    }
+
+    public BigDecimal getOrcamento() {
+        return orcamento;
+    }
+
+    public void setOrcamento(BigDecimal orcamento) {
+        this.orcamento = orcamento;
+    }
+
+    public List<Ator> getAtores() {
+        return atores;
+    }
+
+    public void setAtores(List<Ator> atores) {
+        this.atores = atores;
+    }
+
+    public Diretor getDiretor() {
+        return diretor;
+    }
+
+    public void setDiretor(Diretor diretor) {
         this.diretor = diretor;
     }
 }
