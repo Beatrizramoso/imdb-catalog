@@ -1,2 +1,0 @@
-# catalogo-imdb
-Projeto catalogo
