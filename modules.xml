@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/projetoFilme.iml" filepath="$PROJECT_DIR$/projetoFilme.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/imdb-catalog.iml" filepath="$PROJECT_DIR$/imdb-catalog.iml" />
->>>>>>> f823787 (atualizano o repositorio)
     </modules>
   </component>
 </project>
