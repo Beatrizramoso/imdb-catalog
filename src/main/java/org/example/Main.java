@@ -10,7 +10,7 @@ public class Main {
     private static List<Filme> filmes = new ArrayList<>();
 
     public static void main(String[] args) {
-        System.out.println("Application initiated!!!");
+        System.out.println("\nApplication initiated!!!\n");
 
         cadastrarEraUmaVezEmHollywood();
         cadastrarAListaDeSchindler();
@@ -24,7 +24,7 @@ public class Main {
             System.out.println(erro.getMessage());
         }
 
-        System.out.println("Application finished!!!!");
+        System.out.println("\nApplication finished!!!\n");
     }
 
     public static void cadastrarEraUmaVezEmHollywood() {
